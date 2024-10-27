@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* App.css */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Arial', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h2 {
+    text-align: center;
+    color: #ffffff;
   }
-}
+  
+  .settings-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .time-picker-container {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: 20%; /* 20% for time pickers */
+    margin-right: 20px;
+  }
+  
+  .sound-box {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: 80%; /* 80% for sound boxes */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #B0B0B0;
+  }
+  
+  input[type="time"],
+  input[type="number"],
+  select {
+    background-color: #333333;
+    color: #E0E0E0;
+    border: 1px solid #555555;
+    padding: 8px;
+    border-radius: 4px;
+    align-items: center
+  }
+  
+  input[type="number"] {
+    width: 80px; /* Set a fixed width for the wheels */
+  }
+  
+  .sound-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .time-wheels {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time-wheels label {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #6200EE;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color: #3700B3;
+  }
+  
+  select {
+    appearance: none;
+    background-color: #333333;
+    padding-right: 20px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #6200EE;
+  }
